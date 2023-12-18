@@ -1,0 +1,138 @@
+@import './media';
+@import './fonts';
+@import './mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.primary-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: minmax(20px auto) minmax(400px, auto) 100px minmax(
+      300px,
+      auto
+    );
+  grid-auto-rows: minmax(10px, auto);
+  grid-gap: 0px;
+  grid-template-areas:
+    'header header header header header'
+    'hero hero hero hero hero'
+    'proof proof proof proof proof'
+    'left middle middle middle right'
+    'footer footer footer footer footer';
+}
+
+.header {
+  grid-area: header;
+  border: 1px red dotted;
+  font-family: $font-logo;
+  font-size: calc(16px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  border: 1px green dotted;
+}
+
+.left {
+  grid-area: left;
+  border: 1px blue dotted;
+}
+
+.right {
+  grid-area: right;
+  border: 1px yellow dotted;
+}
+
+.middle {
+  grid-area: middle;
+  border: 1px pink dotted;
+}
+
+.hero {
+  background-color: rgb(8, 10, 3);
+  padding: 40px;
+  border: 1px silver dotted;
+  align-self: middle;
+  font-family: $font-hero;
+  font-size: calc(18px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  .title {
+    font-weight: bold;
+    font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+  }
+  .subText {
+    .subTitle {
+      text-align: center;
+    }
+    width: 80%;
+    div {
+      margin-bottom: 5vh;
+    }
+  }
+  .hero-img {
+    background-image: url('../assets/images/woman_demo.jpg');
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 50vh;
+    background-size: 100% 100%;
+    box-shadow: 0 0 20px 20px rgb(8, 10, 3) inset;
+  }
+  .rightColumn {
+    font-family: $font-standard;
+    padding-top: 2vh;
+    padding-left: 5vw;
+    text-align: left;
+  }
+}
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg, 8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken($bg, 25%);
+  }
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.btn-green {
+  @include button-bg(#2ecc71);
+}
+
+.btn-blue {
+  @include button-bg(#3498db);
+}
+
+.btn-yellow {
+  @include button-bg(#f1c40f);
+}
+
+.btn-red {
+  @include button-bg(#e74c3c);
+}
+
+.box {
+  border-radius: 5px;
+}

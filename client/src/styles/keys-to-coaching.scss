@@ -1,0 +1,363 @@
+/**
+*
+* keys-banner
+*
+*/
+.keys-banner-section {
+  padding-top: 16px;
+  padding-bottom: 60px;
+  .content {
+    padding: 152px 46px;
+    background-image: url('../assets/5-keys/5-keys-banner.png');
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 36px;
+
+    .text-container {
+      max-width: 565px;
+    }
+
+    .title-text {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: $white;
+    }
+
+    .text {
+      font-size: 18px;
+      color: rgba($color: $white, $alpha: 0.63);
+    }
+  }
+}
+
+/**
+*
+*
+* consideration-section
+*
+*/
+.consideration-section {
+  padding-top: 60px;
+  padding-bottom: 70px;
+
+  .title-text {
+    color: $primary;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+    span {
+      color: #2a2a2a;
+    }
+  }
+
+  .consideration-card-container {
+    padding: 40px 16px 20px 16px;
+    display: grid;
+    grid-template-columns: repeat(5, 320px);
+    gap: 30px;
+
+    .consideration-card {
+      padding: 30px 20px;
+      width: 325px;
+      min-height: 423px;
+      background: $white 0% 0% no-repeat padding-box;
+      box-shadow: 1px 11px 18px #aebbd93d;
+      border-radius: 27px;
+
+      .icon {
+        margin-bottom: 34px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .card-title-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #2a2a2a;
+        margin-bottom: 20px;
+      }
+
+      .text {
+        color: #545454;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+/**
+*
+*
+* benefit-section
+*
+*/
+.benefit-section {
+  padding-top: 60px;
+  .title-text {
+    font-size: 30px;
+    font-weight: 600;
+    color: $white;
+    text-align: center;
+  }
+
+  .panel {
+    width: 100%;
+    border-radius: 0px 0px 36px 36px;
+    background-image: url('../assets/5-keys/benefit-panel-cover.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 30px 208px 30px;
+  }
+
+  .benefit-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 20px;
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -116px;
+
+    .benefit-card {
+      width: 100%;
+      min-height: 368px;
+      padding: 44px 17px;
+      background: $white 0% 0% no-repeat padding-box;
+      box-shadow: 0px 22px 29px #aebbd93d;
+      border-radius: 36px;
+
+      .icon {
+        margin-bottom: 15px;
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .card-title-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #2a2a2a;
+        margin-bottom: 16px;
+      }
+
+      .text {
+        color: #545454;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+/**
+*
+*
+* info-panel-section
+*
+*
+*/
+.info-panel-section {
+  padding-bottom: 80px;
+  .info-panel {
+    background-color: #2a2a2a;
+    border-radius: 36px;
+    padding: 78px 100px;
+    background-image: url('../assets/5-keys/info-panel-cover.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .text {
+      text-align: center;
+      color: $white;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .info-slot-container {
+      max-width: 946px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(296px, 1fr));
+      gap: 28px;
+
+      .info-slot {
+        width: 100%;
+        display: flex;
+        box-shadow: 0px 5px 29px #0d3eac2e;
+
+        .icon {
+          width: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $primary;
+          padding: 19.32px 14px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
+        .lbl {
+          width: 100%;
+          display: inline-flex;
+          align-items: center;
+          background-color: $white;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          padding: 20px 10px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .keys-banner-section {
+    .content {
+      padding-top: 90px;
+      padding-bottom: 90px;
+      background-position: 82% center;
+
+      .title-text {
+        font-size: 32px;
+      }
+    }
+  }
+
+  .benefit-section {
+    .benefit-card-container {
+      .benefit-card {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 280px;
+      }
+    }
+  }
+  .info-panel-section {
+    .info-panel {
+      padding-left: 86px;
+      padding-right: 86px;
+
+      .text {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .keys-banner-section {
+    .content {
+      padding: 70px 38px;
+      .title-text {
+        font-size: 26px;
+      }
+
+      .text {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .consideration-section {
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    .title-text {
+      font-size: 26px;
+    }
+
+    .consideration-card-container {
+      padding-top: 20px;
+
+      .consideration-card {
+        min-height: 340px;
+        .icon {
+          margin-bottom: 20px;
+        }
+
+        .card-title-text {
+          font-size: 16px;
+          margin-bottom: 9px;
+        }
+
+        .text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .benefit-section {
+    padding-top: 40px;
+
+    .title-text {
+      font-size: 26px;
+    }
+
+    .panel {
+      padding-bottom: 130px;
+    }
+
+    .benefit-card-container {
+      top: -86px;
+
+      .benefit-card {
+        .card-title-text {
+          font-size: 16px;
+        }
+
+        .text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .info-panel-section {
+    .info-panel {
+      padding: 50px 18px;
+
+      .text {
+        font-size: 18px;
+      }
+
+      .info-slot-container {
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+
+        .info-slot {
+          .icon {
+            width: 50px;
+            padding: 10px;
+
+            svg {
+              max-width: 23px;
+            }
+          }
+
+          .lbl {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.slider-btn:hover {
+  background-color: $blue-light;
+}
+.bg-banner {
+  background-color: $blue-light;
+}
+.slider-img {
+  object-fit: cover;
+  width: 90%;
+}
+.how-it-work-section {
+  .img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.review {
+  max-width: 45rem;
+}
+.join-team-section {
+  background: url('../assets/landingpage/optimized/bg_join.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 18rem;
+}
+.sections {
+  padding: 28rem 0;
+}
+.logo {
+  height: 2.25rem;
+}
+.nav-item {
+  margin: 0 8px;
+  text-align: center;
+}
+.register-btn {
+  border-width: 2.5px;
+}
+.join-us-section {
+  margin-top: 5rem;
+  padding-top: 7.5rem;
+  padding-bottom: 5rem;
+  border-top: 1px solid #dee2e6;
+}

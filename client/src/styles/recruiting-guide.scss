@@ -1,0 +1,248 @@
+/**
+ * 
+ * about author
+ * 
+*/
+.author-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .author {
+    .author-detail {
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      top: 0;
+      bottom: 50px;
+      width: calc(100% - 30px);
+
+      .sticky-top-container {
+        position: sticky;
+        top: 7rem;
+      }
+
+      .author-list {
+        font-size: 16px;
+        list-style-type: none;
+        padding: 35px 23px;
+        margin-bottom: 0;
+        background: rgba($color: $primary, $alpha: 0.05) 0% 0% no-repeat
+          padding-box;
+        border: 1px solid rgba($color: $light-gray, $alpha: 0.05);
+
+        li {
+          color: #a1a1a1;
+          text-transform: uppercase;
+
+          &:not(:last-child) {
+            padding-bottom: 18px;
+          }
+
+          div {
+            cursor: pointer;
+            text-decoration: none;
+
+            &.active-link {
+              color: #2a2a2a;
+              text-decoration: none;
+            }
+          }
+
+          &:hover {
+            a {
+              color: #2a2a2a;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about-author {
+    padding-left: 30px;
+
+    .title {
+      color: #2a2a2a;
+      font-size: 24px;
+      font-weight: 600;
+      padding-top: 21px;
+      margin-bottom: 15px;
+    }
+
+    .text {
+      font-size: 16px;
+      color: #2a2a2a;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .author-content {
+      padding-bottom: 30px;
+      .img-container {
+        width: 143px;
+        height: 132px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 18px;
+          object-position: center;
+          object-fit: cover;
+        }
+      }
+
+      .btn-container {
+        .btn {
+          color: #fff;
+          font-size: 18px;
+          background-color: darken($color: $primary, $amount: 8%);
+          padding: 15.5px 17px;
+        }
+      }
+    }
+
+    .freshman {
+      .freshman-content {
+        padding-bottom: 10px;
+
+        .subtitle {
+          font-size: 20px;
+          font-weight: 500;
+          color: #2a2a2a;
+          padding-bottom: 6px;
+        }
+
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+          li {
+            padding-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            color: #2a2a2a;
+            font-size: 16px;
+            &::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 6px;
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background: $primary 0% 0% no-repeat padding-box;
+            }
+          }
+
+          &.roman {
+            list-style-type: lower-roman;
+            padding-left: 28px;
+
+            li {
+              padding-left: 12px;
+
+              &::before {
+                content: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .author-section {
+    .about-author {
+      .author-content {
+        .btn-container {
+          .btn {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .author-section {
+    .author {
+      .author-detail {
+        .author-list {
+          font-size: 14px;
+          padding: 30px 20px;
+
+          li {
+            &:not(:last-child) {
+              padding-bottom: 14px;
+            }
+          }
+        }
+      }
+    }
+    .about-author {
+      .title {
+        font-size: 20px;
+      }
+
+      .freshman {
+        .freshman-content {
+          .subtitle {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .author-section {
+    .author {
+      display: none;
+    }
+
+    .about-author {
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .author-section {
+    .about-author {
+      .title {
+        font-size: 18px;
+      }
+
+      .text {
+        font-size: 14px;
+      }
+
+      .author-content {
+        .btn-container {
+          .btn {
+            font-size: 14px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+          }
+        }
+      }
+
+      .freshman {
+        .freshman-content {
+          .subtitle {
+            font-size: 15px;
+          }
+
+          ul {
+            li {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

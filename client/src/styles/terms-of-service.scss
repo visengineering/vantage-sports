@@ -1,0 +1,69 @@
+/**
+*
+* tearm-service-section
+*
+*/
+
+.term-service-section {
+  padding-bottom: 140px;
+
+  .content-block {
+    max-width: 992px;
+    width: 100%;
+
+    .block {
+      margin-bottom: 60px;
+
+      .title {
+        font-size: 20px;
+        color: $black;
+        margin-bottom: 31px;
+        font-weight: 600;
+      }
+
+      .text-container {
+        font-size: 15px;
+
+        ul {
+          padding-left: 18px;
+
+          &.circle {
+            list-style-type: circle;
+          }
+        }
+      }
+
+      .text {
+        font-size: 15px;
+        color: $black;
+
+        a {
+          text-decoration: underline;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+/**
+*
+* media-query
+*
+*/
+
+@media (max-width: 575px) {
+  .term-service-section {
+    .content-block {
+      .block {
+        .title {
+          font-size: 18px;
+          margin-bottom: 22px;
+        }
+      }
+    }
+  }
+}

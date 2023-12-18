@@ -1,0 +1,175 @@
+/**
+*
+* testimonial-section
+*
+*/
+.testimonial-section {
+  .testimonial-block {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .testimonial {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    height: 100%;
+
+    .img-container {
+      height: 190px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+      }
+    }
+
+    .card-text-body {
+      padding-top: 10px;
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+
+    .type {
+      font-size: 15px;
+      color: $primary;
+      margin-bottom: 3px;
+    }
+
+    .institute {
+      color: #484848;
+      margin-right: 5px;
+    }
+
+    .institute,
+    .name {
+      font-size: 18px;
+    }
+
+    .name {
+      font-weight: 500;
+    }
+
+    .message {
+      margin-bottom: 6px;
+    }
+
+    .message,
+    .by {
+      color: #464646;
+    }
+
+    .by {
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    &.focus {
+      .img-container {
+        height: 265px;
+      }
+    }
+  }
+}
+
+/**
+ * 
+ * modal
+ * 
+*/
+.appriciationVideoModal {
+  .modal-dialog {
+    max-width: 70%;
+  }
+
+  .modal-body {
+    padding: 0;
+    background: transparent;
+  }
+
+  .modal-content {
+    position: relative;
+    background: transparent;
+    border: 0;
+    .btn-close {
+      position: absolute;
+      right: -18px;
+      z-index: 9999;
+      top: -18px;
+      background-color: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      font-size: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .testimonial-section {
+    .testimonial-block {
+      column-gap: 30px;
+    }
+
+    .testimonial {
+      &.focus {
+        .img-container {
+          height: 190px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .appriciationVideoModal {
+    .modal-dialog {
+      max-width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .modal-body {
+      iframe {
+        height: 50vh;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .testimonial-section {
+    .testimonial {
+      .type {
+        font-size: 13px;
+      }
+
+      .institute,
+      .name,
+      .message,
+      .by {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .appriciationVideoModal {
+    .modal-body {
+      iframe {
+        height: 38vh;
+      }
+    }
+  }
+}

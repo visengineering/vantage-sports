@@ -1,0 +1,167 @@
+@import '../styles/variable.scss';
+
+.hero-section {
+  padding-top: 40px;
+  padding-bottom: 54px;
+
+  .content-img {
+    position: relative;
+    background-color: rgba(15, 71, 230, 0.19);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    border-radius: 19px;
+    z-index: 0;
+    max-width: 100%;
+  }
+  .heading {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: capitalize;
+    padding-top: 68px;
+    padding-bottom: 68px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+.card-section {
+  max-width: 100%;
+  margin-top: 50px;
+
+  .title {
+    margin-left: 15px;
+    margin-bottom: 18px;
+    width: 100%;
+    height: 26px;
+    display: inline;
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+  }
+
+  .testimonial-block {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 40px;
+    padding-top: 15px;
+    padding-bottom: 80px;
+  }
+
+  .testimonial {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    height: 100%;
+
+    .img-container {
+      min-height: 66px;
+      padding: 20px;
+    }
+
+    .card-text-body {
+      padding: 10px 17px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      color: #2a2a2a;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .article {
+      font-size: 16px;
+      color: #545454;
+      font-family: 'Poppins', sans-serif;
+      span {
+        font-weight: 600;
+        color: black;
+        cursor: pointer;
+      }
+    }
+    .learn-btn {
+      width: 114px;
+      height: 23px;
+      margin-top: 34px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      .learn-more {
+        font-size: 16px;
+        font-weight: 500;
+        color: #0f47e6;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        text-transform: capitalize;
+      }
+    }
+    .arrow {
+      color: #0f47e6;
+      margin-left: 6px;
+      font-size: 10px;
+      width: 15px;
+      height: 13px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    .heading {
+      font-size: 30px;
+      font-weight: 600;
+      padding: 40px;
+    }
+  }
+  .testimonial-block {
+    column-gap: 30px;
+  }
+
+  .card-section {
+    margin-top: 20px;
+
+    .title {
+      h1 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    .heading {
+      font-size: 24px;
+    }
+  }
+
+  .card-section {
+    .testimonial {
+      .card-title {
+        font-size: 18px;
+      }
+
+      .article {
+        font-size: 14px;
+      }
+
+      .learn-btn {
+        .learn-more {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

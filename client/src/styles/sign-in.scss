@@ -1,0 +1,13 @@
+.sign-in-form {
+  .was-validated .form-control:invalid,
+  .form-control.is-invalid {
+    background: none;
+  }
+  .alert,
+  .form-group,
+  .or-text,
+  .signup-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

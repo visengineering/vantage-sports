@@ -1,0 +1,278 @@
+/**
+*
+* btn-signup
+*
+*/
+.btn-signup {
+  padding: 0.65rem 1rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: rgba(8, 31, 133, 0.75);
+  background-color: rgba(255, 255, 255, 1);
+  border-color: rgba(14, 63, 255, 1);
+  border-radius: 0.4rem;
+  &:hover {
+    color: #fff;
+    background-color: rgba(8, 31, 133, 0.99);
+    border-color: rgba(8, 31, 133, 0.99);
+  }
+  &:focus {
+    color: #fff;
+    background-color: #100e7e;
+    border-color: #100e7e;
+    box-shadow: 0 0 0 0.25rem #030333;
+  }
+  &:active {
+    color: #fff;
+    background-color: #092abb;
+    border-color: #092abb;
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+    }
+  }
+  &:disabled {
+    color: #fff;
+    background-color: #647deb;
+    border-color: #647deb;
+  }
+}
+.btn-signup.active {
+  color: #fff;
+  background-color: #092abb;
+  border-color: #092abb;
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+  }
+}
+.btn-signup.disabled {
+  color: #fff;
+  background-color: #647deb;
+  border-color: #647deb;
+}
+
+/**
+*
+* btn-signin
+*
+*/
+.btn-signin {
+  padding: 0.65rem 1rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgba(14, 63, 255, 1);
+  border-color: rgba(14, 63, 255, 1);
+  border-radius: 0.4rem;
+  box-shadow: rgba(14, 63, 255, 0.75) 0px 5px 15px;
+  &:hover {
+    color: #fff;
+    background-color: rgba(8, 31, 133, 0.99);
+    border-color: rgba(8, 31, 133, 0.99);
+  }
+  &:focus {
+    color: #fff;
+    background-color: #100e7e;
+    border-color: #100e7e;
+    box-shadow: 0 0 0 0.25rem #030333;
+  }
+  &:active {
+    color: #fff;
+    background-color: #092abb;
+    border-color: #092abb;
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+    }
+  }
+  &:disabled {
+    color: #fff;
+    background-color: #647deb;
+    border-color: #647deb;
+  }
+}
+.btn-signin.active {
+  color: #fff;
+  background-color: #092abb;
+  border-color: #092abb;
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+  }
+}
+.btn-signin.disabled {
+  color: #fff;
+  background-color: #647deb;
+  border-color: #647deb;
+}
+
+/**
+*
+* btn-social
+*
+*/
+.btn-social {
+  padding: 0.25rem 1rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(232, 240, 254, 1);
+  border-color: rgba(14, 63, 255, 1);
+  border-radius: 0.4rem;
+  &:hover {
+    color: #fff;
+    background-color: rgba(105, 126, 161, 0.5);
+    border-color: rgba(8, 31, 133, 0.99);
+  }
+  &:focus {
+    color: #fff;
+    background-color: rgba(105, 126, 161, 0.5);
+    border-color: #100e7e;
+    box-shadow: 0 0 0 0.25rem #030333;
+  }
+  &:active {
+    color: #fff;
+    background-color: #092abb;
+    border-color: #092abb;
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+    }
+  }
+  &:disabled {
+    color: #fff;
+    background-color: #647deb;
+    border-color: #647deb;
+  }
+}
+.btn-social.active {
+  color: #fff;
+  background-color: #092abb;
+  border-color: #092abb;
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+  }
+}
+.btn-social.disabled {
+  color: #fff;
+  background-color: #647deb;
+  border-color: #647deb;
+}
+
+/**
+*
+* btn-check/show
+*
+*/
+.btn-check {
+  &:focus {
+    + {
+      .btn-signup {
+        color: #fff;
+        background-color: #100e7e;
+        border-color: #100e7e;
+        box-shadow: 0 0 0 0.25rem #030333;
+      }
+      .btn-signin {
+        color: #fff;
+        background-color: #100e7e;
+        border-color: #100e7e;
+        box-shadow: 0 0 0 0.25rem #030333;
+      }
+      .btn-social {
+        color: #fff;
+        background-color: rgba(105, 126, 161, 0.5);
+        border-color: #100e7e;
+        box-shadow: 0 0 0 0.25rem #030333;
+      }
+    }
+  }
+  &:active {
+    + {
+      .btn-signup {
+        color: #fff;
+        background-color: #092abb;
+        border-color: #092abb;
+        &:focus {
+          box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+        }
+      }
+      .btn-signin {
+        color: #fff;
+        background-color: #092abb;
+        border-color: #092abb;
+        &:focus {
+          box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+        }
+      }
+      .btn-social {
+        color: #fff;
+        background-color: #092abb;
+        border-color: #092abb;
+        &:focus {
+          box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+        }
+      }
+    }
+  }
+  &:checked {
+    + {
+      .btn-signup {
+        color: #fff;
+        background-color: #092abb;
+        border-color: #092abb;
+        &:focus {
+          box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+        }
+      }
+      .btn-signin {
+        color: #fff;
+        background-color: #092abb;
+        border-color: #092abb;
+        &:focus {
+          box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+        }
+      }
+      .btn-social {
+        color: #fff;
+        background-color: #092abb;
+        border-color: #092abb;
+        &:focus {
+          box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+        }
+      }
+    }
+  }
+}
+.show {
+  > .btn-signup.dropdown-toggle {
+    color: #fff;
+    background-color: #092abb;
+    border-color: #092abb;
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+    }
+  }
+  > .btn-signin.dropdown-toggle {
+    color: #fff;
+    background-color: #092abb;
+    border-color: #092abb;
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+    }
+  }
+  > .btn-social.dropdown-toggle {
+    color: #fff;
+    background-color: #092abb;
+    border-color: #092abb;
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(123, 134, 238, 0.5);
+    }
+  }
+}
+
+.submit-button {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 2px 2px 20px #0000003b;
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

@@ -1,0 +1,29 @@
+.sign-up-form {
+  .was-validated .form-control:invalid,
+  .form-control.is-invalid {
+    background: none;
+  }
+  .form-group,
+  .or-text,
+  .signup-heading,
+  p,
+  .alert,
+  h4,
+  .text-danger {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+  @media (max-width: 791px) {
+    img {
+      width: 100vw;
+      margin-bottom: 16px;
+    }
+    .title {
+      margin-bottom: 16px;
+    }
+  }
+}

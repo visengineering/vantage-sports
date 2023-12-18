@@ -1,0 +1,2 @@
+web: NODE_ENV=production ts-node ./api/api.ts
+clock: ts-node ./api/services/clock.ts

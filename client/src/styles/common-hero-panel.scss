@@ -1,0 +1,101 @@
+/**
+*
+* hero-panel-section
+*
+*/
+.hero-panel-section {
+  padding-top: 40px;
+  padding-bottom: 54px;
+
+  .panel-section {
+    background-color: #d8eafe;
+    border-radius: 21px;
+    background-image: url(../assets/basket-ball.svg);
+    background-position: 42px 37%;
+    background-repeat: no-repeat;
+    padding: 83px 49px 25px 49px;
+
+    .title {
+      font-size: 40px;
+      font-weight: 600;
+      color: #0d0d0d;
+      margin-bottom: 0;
+      line-height: 1.25;
+    }
+
+    .sub-title {
+      font-size: 16px;
+      color: rgba($color: #0d0d0d, $alpha: 0.39);
+      margin-bottom: 0;
+    }
+
+    &.testimonial-panel {
+      background-image: url(../assets/testimonial-bg.png);
+      background-position: bottom right;
+      padding-top: 125px;
+      padding-bottom: 85px;
+
+      .title {
+        color: $white;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: -92%;
+          background-image: url(../assets/left-quote.png);
+          background-repeat: no-repeat;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+/**
+*
+* media-query
+*
+*/
+
+@media (max-width: 767px) {
+  .hero-panel-section {
+    .panel-section {
+      &.testimonial-panel {
+        background-position: bottom left;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-panel-section {
+    padding-top: 20px;
+    padding-bottom: 25px;
+
+    .panel-section {
+      text-align: center;
+
+      &.testimonial-panel {
+        padding-top: 60px;
+        padding-bottom: 40px;
+
+        .title {
+          &::before {
+            top: -100%;
+          }
+        }
+      }
+
+      .title {
+        font-size: 25px;
+        font-weight: 600;
+      }
+      .sub-title {
+        font-size: 14px;
+      }
+    }
+  }
+}

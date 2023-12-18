@@ -1,0 +1,60 @@
+Sport,Position
+Men's Lacrosse,Attack
+Men's Lacrosse,Midfield
+Men's Lacrosse,Faceoff
+Men's Lacrosse,Defense
+Men's Lacrosse,Goalie
+Women's Lacrosse,Attack
+Women's Lacrosse,Midfield
+Women's Lacrosse,Faceoff
+Women's Lacrosse,Defense
+Women's Lacrosse,Goalie
+Women's Softball,Catcher
+Women's Softball,Pitcher
+Women's Softball,DH
+Women's Softball,1B
+Women's Softball,2B
+Women's Softball,SS
+Women's Softball,3B
+Women's Softball,RF
+Women's Softball,LF
+Women's Softball,CF
+Baseball,Catcher
+Baseball,Pitcher
+Baseball,DH
+Baseball,1B
+Baseball,2B
+Baseball,SS
+Baseball,3B
+Baseball,RF
+Baseball,LF
+Baseball,CF
+Men's Basketball,PF
+Men's Basketball,SG
+Men's Basketball,SF
+Men's Basketball,PF
+Men's Basketball,C
+Women's Basketball,PF
+Women's Basketball,SG
+Women's Basketball,SF
+Women's Basketball,PF
+Football,QB
+Football,RB
+Football,FB
+Football,TE
+Football,WR
+Football,C
+Football,G
+Football,T
+Football,DE
+Football,DT
+Football,LB
+Football,CB
+Football,S
+Football,K
+Football,P
+Golf,N/A
+Soccer,Forward
+Soccer,Midfield
+Soccer,Defense
+Soccer,Goalkeeper

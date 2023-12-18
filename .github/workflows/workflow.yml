@@ -1,0 +1,58 @@
+name: Vantage Sports
+
+on: [push]
+
+jobs:
+  standard-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set node js version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.17.6
+          cache: "yarn"
+      - name: Install and cache dependencies
+        run: yarn install --frozen-lockfile
+      - name: Lint - check code formatting
+        run: yarn lint
+      - name: Backend TypeScript - check type safety
+        run: sh typecheck-backend.sh
+      - name: Client TypeScript - check type safety
+        run: sh typecheck-client.sh
+
+  deploy-dev:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Heroku login credentials
+        run: |
+          cat > ~/.netrc <<EOF
+            machine api.heroku.com
+              login $HEROKU_EMAIL
+              password $HEROKU_API_KEY
+            machine git.heroku.com
+              login $HEROKU_EMAIL
+              password $HEROKU_API_KEY
+          EOF
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
+      - name: Set node js version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.17.6
+      - name: Build and deploy
+        run: |
+          export GITHUB_ACTIONS=true
+          git remote add development https://git.heroku.com/vantage-dev.git
+          git config --global user.name "I just deploy to heroku"
+          git config --global user.email "deplot-vantage-to-heroku@example.com"
+          git fetch
+          git remote prune origin
+          git remote prune development
+          sh deploy_dev.sh

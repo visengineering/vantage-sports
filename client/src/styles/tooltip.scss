@@ -1,0 +1,31 @@
+.tooltip-arrow {
+  &,
+  &::before {
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    z-index: -1;
+  }
+
+  &::before {
+    content: '';
+    transform: rotate(45deg);
+    background: #fcfcfc;
+  }
+
+  [data-popper-placement^='top'] > & {
+    bottom: -0.4rem;
+  }
+
+  [data-popper-placement^='bottom'] > & {
+    top: -0.4rem;
+  }
+
+  [data-popper-placement^='left'] > & {
+    right: -0.4rem;
+  }
+
+  [data-popper-placement^='right'] > & {
+    left: -0.4rem;
+  }
+}

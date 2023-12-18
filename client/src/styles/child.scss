@@ -1,0 +1,29 @@
+.child-details-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .child-card {
+    padding: 24px 24px;
+
+    h3 {
+      margin: 0;
+    }
+    button {
+      max-height: 42px;
+    }
+  }
+
+  .child-details {
+    margin-bottom: 45px;
+
+    .title {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+  }
+
+  .remarks {
+    word-break: break-all;
+  }
+}

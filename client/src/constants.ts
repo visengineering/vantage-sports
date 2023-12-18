@@ -1,0 +1,2 @@
+export const DEFAULT_COOKIE_EXPIRY =
+  Number(process.env.REACT_APP_SESSION_EXPIRY_SECONDS) || 7200;

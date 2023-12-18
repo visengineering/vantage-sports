@@ -1,0 +1,196 @@
+/* --- note: custom CSS code --- */
+
+/* Important class for Google-maps, it comes with google maps integration */
+.pac-container {
+  z-index: 1100;
+}
+
+/*
+* loader
+*/
+.loader-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: transparent;
+  z-index: 1;
+}
+
+/*
+* title
+*/
+.title-signin {
+  margin-left: 0.2rem;
+  font-weight: 600;
+}
+.h-db-600-9 {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: darkblue;
+}
+
+/*
+* font
+*/
+.font-monospace {
+  font-family: var(--bs-font-monospace);
+}
+.fs-1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+.fs-2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+.fs-3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+.fs-4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+.fs-5 {
+  font-size: calc(1.25rem + 0.2vw);
+}
+.fs-6 {
+  font-size: calc(1rem + 0.2vw);
+}
+.fs-9 {
+  font-size: calc(0.9rem + 0.1vw);
+}
+.fst-italic {
+  font-style: italic;
+}
+.fst-normal {
+  font-style: normal;
+}
+.fw-light {
+  font-weight: 300;
+}
+.fw-lighter {
+  font-weight: lighter;
+}
+.fw-normal {
+  font-weight: 400;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-bold {
+  font-weight: 700;
+}
+.fw-bolder {
+  font-weight: bolder;
+}
+
+/*
+* img
+*/
+.text-decoration-none {
+  text-decoration: none;
+}
+.text-decoration-underline {
+  text-decoration: underline;
+}
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+/*
+* img
+*/
+.player-image {
+  width: 100%;
+  height: auto;
+  max-width: 558px;
+  max-height: 731px;
+  padding: 2rem;
+}
+
+/*
+* sizing
+*/
+.min-w-100-pct {
+  min-width: 100%;
+}
+.min-h-100-pct {
+  min-height: 100%;
+}
+.max-w-450-px {
+  max-width: 450px;
+}
+
+/*
+* alignments
+*/
+.center-xy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-x {
+  display: flex;
+  justify-content: center;
+}
+.center-y {
+  display: flex;
+  align-items: center;
+}
+
+/*
+* margin
+*/
+.mt-minus-1 {
+  margin-top: -0.75rem;
+}
+
+/*
+* padding
+*/
+.py-auto {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/*
+* background-color
+*/
+.bg-sky {
+  opacity: 1;
+  background-color: #dee8ff;
+}
+
+/*
+* border
+*/
+.border-line {
+  display: flex;
+  height: 0;
+  width: 100%;
+  border: 1px solid rgba(79, 119, 122, 0.5);
+}
+
+/*
+* link
+*/
+.link-info-custom {
+  color: darkblue;
+  &:focus {
+    color: #072986d7;
+  }
+  &:hover {
+    color: #072986d7;
+  }
+}
+
+/*
+* row
+*/
+.row-social {
+  margin: 0.3rem 0;
+  width: -webkit-fill-available;
+  justify-content: center;
+}
+
+/* ================== */

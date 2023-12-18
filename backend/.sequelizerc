@@ -1,0 +1,10 @@
+'use strict';
+
+const path = require('path');
+
+module.exports = {
+  config: path.join(__dirname, 'api/db/compiled/config/connection.js'),
+  'migrations-source-path': path.join(__dirname, 'api/db/migrations'),
+  'migrations-compiled-path': path.join(__dirname, 'api/db/compiled/api/db/migrations'),
+  'seeders-path': path.join(__dirname, 'api/db/compiled/api/db/seeders'),
+};

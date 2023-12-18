@@ -1,0 +1,28 @@
+.share-on-socials {
+  button {
+    margin-right: 16px;
+  }
+  button svg {
+    display: flex;
+    align-items: center;
+  }
+  #copy-link-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+  .share-icon {
+    height: 20px;
+  }
+}
+.event-share {
+  button:last-child {
+    margin-right: 0;
+  }
+  margin-top: 16px;
+}
+.coach-share {
+  button:last-child {
+    margin-right: 0;
+  }
+}

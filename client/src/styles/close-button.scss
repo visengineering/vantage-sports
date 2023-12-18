@@ -1,0 +1,25 @@
+.crossicon {
+  background-color: inherit;
+  border-color: $gray-700;
+
+  &:hover {
+    border-color: $red;
+    fill: $red;
+    svg {
+      path {
+        fill: $red;
+      }
+    }
+  }
+}
+.day-availability-time-range {
+  .crossicon {
+    background-color: inherit;
+    border-color: $red;
+    svg {
+      path {
+        fill: $red;
+      }
+    }
+  }
+}

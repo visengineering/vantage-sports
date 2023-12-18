@@ -1,0 +1,62 @@
+.timeslot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) auto;
+  grid-template-rows: repeat(2, auto);
+  column-gap: 8px;
+  grid-template-areas:
+    'start-label duration-label cost-label participants-label empty'
+    'start-input duration-input cost-input participants-input trash';
+}
+.timeslot-grid .form-group {
+  margin-bottom: 16px;
+}
+.timeslot-label {
+  display: flex;
+  align-items: flex-end;
+}
+.timeslot-button {
+  grid-area: trash;
+}
+
+@media (max-width: 768px) {
+  .timeslot-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      'start-label duration-label'
+      'start-input duration-input'
+      'cost-label participants-label'
+      'cost-input participants-input'
+      'trash trash';
+    border: 1px solid #acacac;
+    border-radius: 15px;
+    padding: 16px;
+  }
+  .timeslot-button {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 425px) {
+  .timeslot-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+      'start-label'
+      'start-input'
+      'duration-label'
+      'duration-input'
+      'cost-label'
+      'cost-input'
+      'participants-label'
+      'participants-input'
+      'trash';
+    border: 1px solid #acacac;
+    border-radius: 15px;
+    padding: 16px;
+  }
+  .timeslot-button {
+    display: flex;
+    justify-content: center;
+  }
+}
